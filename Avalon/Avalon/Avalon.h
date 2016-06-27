@@ -16,4 +16,10 @@ FOUNDATION_EXPORT const unsigned char AvalonVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <Avalon/PublicHeader.h>
 
+#import <Avalon/Async.h>
+#import <Avalon/AsyncBlock.h>
+#import <Avalon/AsyncOption.h>
+#import <Avalon/AsyncBlockPool.h>
+#import <Avalon/AsyncAll.h>
+
 
