@@ -51,6 +51,5 @@
 }
 
 - (void)dealloc {
-    NSLog(@"AsynBlock dealloc %@", _name);
 }
 @end

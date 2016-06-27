@@ -73,6 +73,5 @@
 }
 
 - (void)dealloc {
-    NSLog(@"AsyncAll dealloc %@", self.identify);
 }
 @end

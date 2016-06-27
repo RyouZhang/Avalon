@@ -122,7 +122,6 @@
 
 - (void)dealloc {
     [[NSNotificationCenter defaultCenter] removeObserver:self];
-    NSLog(@"Async dealloc %@", _identify);
     [_blockDic removeAllObjects];
     _child = nil;
 }
