@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		D14863D91D1BC82D00040B32 /* Async.h in Headers */ = {isa = PBXBuildFile; fileRef = D14863D71D1BC82D00040B32 /* Async.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D14863DA1D1BC82D00040B32 /* Async.m in Sources */ = {isa = PBXBuildFile; fileRef = D14863D81D1BC82D00040B32 /* Async.m */; };
+		D1985B731D26C58200AC6AF3 /* AsyncAll.h in Headers */ = {isa = PBXBuildFile; fileRef = D1985B711D26C58200AC6AF3 /* AsyncAll.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1985B741D26C58200AC6AF3 /* AsyncAll.m in Sources */ = {isa = PBXBuildFile; fileRef = D1985B721D26C58200AC6AF3 /* AsyncAll.m */; };
+		D1985B771D26C76E00AC6AF3 /* AsyncAny.h in Headers */ = {isa = PBXBuildFile; fileRef = D1985B751D26C76E00AC6AF3 /* AsyncAny.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1985B781D26C76E00AC6AF3 /* AsyncAny.m in Sources */ = {isa = PBXBuildFile; fileRef = D1985B761D26C76E00AC6AF3 /* AsyncAny.m */; };
+		D1985B7B1D26C86700AC6AF3 /* AsyncSeries.h in Headers */ = {isa = PBXBuildFile; fileRef = D1985B791D26C86700AC6AF3 /* AsyncSeries.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1985B7C1D26C86700AC6AF3 /* AsyncSeries.m in Sources */ = {isa = PBXBuildFile; fileRef = D1985B7A1D26C86700AC6AF3 /* AsyncSeries.m */; };
 		D19D0D261CF0ABE600AC9968 /* Avalon.h in Headers */ = {isa = PBXBuildFile; fileRef = D19D0D251CF0ABE600AC9968 /* Avalon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1CAA6601D1BC94800877016 /* AsyncBlockPool.h in Headers */ = {isa = PBXBuildFile; fileRef = D1CAA65E1D1BC94800877016 /* AsyncBlockPool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1CAA6611D1BC94800877016 /* AsyncBlockPool.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CAA65F1D1BC94800877016 /* AsyncBlockPool.m */; };
@@ -18,8 +24,8 @@
 		D1CAA6691D1BD3C800877016 /* AsyncScheduler.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CAA6671D1BD3C800877016 /* AsyncScheduler.m */; };
 		D1CAA66C1D1BDC7900877016 /* AsyncWorker.h in Headers */ = {isa = PBXBuildFile; fileRef = D1CAA66A1D1BDC7900877016 /* AsyncWorker.h */; };
 		D1CAA66D1D1BDC7900877016 /* AsyncWorker.m in Sources */ = {isa = PBXBuildFile; fileRef = D1CAA66B1D1BDC7900877016 /* AsyncWorker.m */; };
-		D1D52DB51D202D9600B05CCD /* AsyncAll.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D52DB31D202D9600B05CCD /* AsyncAll.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1D52DB61D202D9600B05CCD /* AsyncAll.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D52DB41D202D9600B05CCD /* AsyncAll.m */; };
+		D1D52DB51D202D9600B05CCD /* AsyncParallel.h in Headers */ = {isa = PBXBuildFile; fileRef = D1D52DB31D202D9600B05CCD /* AsyncParallel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D1D52DB61D202D9600B05CCD /* AsyncParallel.m in Sources */ = {isa = PBXBuildFile; fileRef = D1D52DB41D202D9600B05CCD /* AsyncParallel.m */; };
 		D1FEC2D51D09C87E0001C166 /* AsyncOption.h in Headers */ = {isa = PBXBuildFile; fileRef = D1FEC2D31D09C87E0001C166 /* AsyncOption.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D1FEC2D61D09C87E0001C166 /* AsyncOption.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FEC2D41D09C87E0001C166 /* AsyncOption.m */; };
 /* End PBXBuildFile section */
@@ -27,6 +33,12 @@
 /* Begin PBXFileReference section */
 		D14863D71D1BC82D00040B32 /* Async.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Async.h; sourceTree = "<group>"; };
 		D14863D81D1BC82D00040B32 /* Async.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Async.m; sourceTree = "<group>"; };
+		D1985B711D26C58200AC6AF3 /* AsyncAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncAll.h; sourceTree = "<group>"; };
+		D1985B721D26C58200AC6AF3 /* AsyncAll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncAll.m; sourceTree = "<group>"; };
+		D1985B751D26C76E00AC6AF3 /* AsyncAny.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncAny.h; sourceTree = "<group>"; };
+		D1985B761D26C76E00AC6AF3 /* AsyncAny.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncAny.m; sourceTree = "<group>"; };
+		D1985B791D26C86700AC6AF3 /* AsyncSeries.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncSeries.h; sourceTree = "<group>"; };
+		D1985B7A1D26C86700AC6AF3 /* AsyncSeries.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncSeries.m; sourceTree = "<group>"; };
 		D19D0D221CF0ABE600AC9968 /* Avalon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Avalon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D19D0D251CF0ABE600AC9968 /* Avalon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Avalon.h; sourceTree = "<group>"; };
 		D19D0D271CF0ABE600AC9968 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -38,8 +50,8 @@
 		D1CAA6671D1BD3C800877016 /* AsyncScheduler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncScheduler.m; sourceTree = "<group>"; };
 		D1CAA66A1D1BDC7900877016 /* AsyncWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncWorker.h; sourceTree = "<group>"; };
 		D1CAA66B1D1BDC7900877016 /* AsyncWorker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncWorker.m; sourceTree = "<group>"; };
-		D1D52DB31D202D9600B05CCD /* AsyncAll.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncAll.h; sourceTree = "<group>"; };
-		D1D52DB41D202D9600B05CCD /* AsyncAll.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncAll.m; sourceTree = "<group>"; };
+		D1D52DB31D202D9600B05CCD /* AsyncParallel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncParallel.h; sourceTree = "<group>"; };
+		D1D52DB41D202D9600B05CCD /* AsyncParallel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncParallel.m; sourceTree = "<group>"; };
 		D1FEC2D31D09C87E0001C166 /* AsyncOption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncOption.h; sourceTree = "<group>"; };
 		D1FEC2D41D09C87E0001C166 /* AsyncOption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncOption.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,8 +100,14 @@
 				D1CAA6631D1BC95500877016 /* AsyncBlock.m */,
 				D1CAA6661D1BD3C800877016 /* AsyncScheduler.h */,
 				D1CAA6671D1BD3C800877016 /* AsyncScheduler.m */,
-				D1D52DB31D202D9600B05CCD /* AsyncAll.h */,
-				D1D52DB41D202D9600B05CCD /* AsyncAll.m */,
+				D1D52DB31D202D9600B05CCD /* AsyncParallel.h */,
+				D1D52DB41D202D9600B05CCD /* AsyncParallel.m */,
+				D1985B711D26C58200AC6AF3 /* AsyncAll.h */,
+				D1985B721D26C58200AC6AF3 /* AsyncAll.m */,
+				D1985B751D26C76E00AC6AF3 /* AsyncAny.h */,
+				D1985B761D26C76E00AC6AF3 /* AsyncAny.m */,
+				D1985B791D26C86700AC6AF3 /* AsyncSeries.h */,
+				D1985B7A1D26C86700AC6AF3 /* AsyncSeries.m */,
 			);
 			path = Avalon;
 			sourceTree = "<group>";
@@ -103,9 +121,12 @@
 			files = (
 				D1CAA6681D1BD3C800877016 /* AsyncScheduler.h in Headers */,
 				D19D0D261CF0ABE600AC9968 /* Avalon.h in Headers */,
+				D1985B771D26C76E00AC6AF3 /* AsyncAny.h in Headers */,
 				D14863D91D1BC82D00040B32 /* Async.h in Headers */,
+				D1985B731D26C58200AC6AF3 /* AsyncAll.h in Headers */,
+				D1985B7B1D26C86700AC6AF3 /* AsyncSeries.h in Headers */,
 				D1CAA6601D1BC94800877016 /* AsyncBlockPool.h in Headers */,
-				D1D52DB51D202D9600B05CCD /* AsyncAll.h in Headers */,
+				D1D52DB51D202D9600B05CCD /* AsyncParallel.h in Headers */,
 				D1CAA6641D1BC95500877016 /* AsyncBlock.h in Headers */,
 				D1CAA66C1D1BDC7900877016 /* AsyncWorker.h in Headers */,
 				D1FEC2D51D09C87E0001C166 /* AsyncOption.h in Headers */,
@@ -181,11 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1D52DB61D202D9600B05CCD /* AsyncAll.m in Sources */,
+				D1D52DB61D202D9600B05CCD /* AsyncParallel.m in Sources */,
 				D1CAA6651D1BC95500877016 /* AsyncBlock.m in Sources */,
 				D14863DA1D1BC82D00040B32 /* Async.m in Sources */,
+				D1985B7C1D26C86700AC6AF3 /* AsyncSeries.m in Sources */,
 				D1FEC2D61D09C87E0001C166 /* AsyncOption.m in Sources */,
+				D1985B741D26C58200AC6AF3 /* AsyncAll.m in Sources */,
 				D1CAA6691D1BD3C800877016 /* AsyncScheduler.m in Sources */,
+				D1985B781D26C76E00AC6AF3 /* AsyncAny.m in Sources */,
 				D1CAA66D1D1BDC7900877016 /* AsyncWorker.m in Sources */,
 				D1CAA6611D1BC94800877016 /* AsyncBlockPool.m in Sources */,
 			);

@@ -20,6 +20,9 @@ FOUNDATION_EXPORT const unsigned char AvalonVersionString[];
 #import <Avalon/AsyncBlock.h>
 #import <Avalon/AsyncOption.h>
 #import <Avalon/AsyncBlockPool.h>
+#import <Avalon/AsyncParallel.h>
 #import <Avalon/AsyncAll.h>
+#import <Avalon/AsyncAny.h>
+#import <Avalon/AsyncSeries.h>
 
 

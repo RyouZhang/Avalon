@@ -1,5 +1,5 @@
 //
-//  AsyncAll.h
+//  AsyncSeries.h
 //  Avalon
 //
 //  Created by RyouZhang on 7/1/16.
@@ -9,14 +9,11 @@
 #import <Foundation/Foundation.h>
 #import <Avalon/Async.h>
 
-@interface AsyncAll : Async {
+@interface AsyncSeries : Async {
 }
-+ (AsyncAll *)all:(NSArray *)blockArray;
-
-- (AsyncAll *(^)(NSArray *))commit;
 @end
 
 
-@interface Async(All)
-+ (Async *)all:(NSArray *)blockArray;
+@interface Async(Series)
++ (Async *)series:(NSArray *)blockArray;
 @end

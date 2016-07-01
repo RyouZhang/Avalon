@@ -1,23 +1,23 @@
 //
-//  AsyncAll.m
+//  AsyncAny.m
 //  Avalon
 //
 //  Created by RyouZhang on 7/1/16.
 //  Copyright © 2016 RyouZhang. All rights reserved.
 //
 
-#import "AsyncAll.h"
+#import "AsyncAny.h"
 #import "AsyncBlock.h"
 #import "AsyncOption.h"
 
-@interface AsyncAll() {
+@interface AsyncAny(){
 }
 @property(strong, atomic)NSMutableArray *asyncArray;
 @property(strong, atomic)NSMutableArray *resultArray;
 @property(assign, atomic)NSInteger      validCount;
 @end
 
-@implementation AsyncAll
+@implementation AsyncAny
 - (instancetype)initWithArray:(NSArray *)asyncArray {
     self = [super init];
     if (self) {
@@ -51,20 +51,20 @@
 }
 
 - (void)processBlockSuccessCallback:(Async __weak *)async context:(id)context {
+    for (Async *child in _asyncArray) {
+        [child cancel];
+    }
+    self.next(AsyncSuccessStatus, context);
+}
+
+- (void)processBlockErrorCallback:(Async __weak *)async context:(id)context {
     _validCount++;
     NSInteger index = [_asyncArray indexOfObject:async];
     [_resultArray replaceObjectAtIndex:index withObject:context];
     
     if (_validCount == [_asyncArray count]) {
-        self.next(AsyncSuccessStatus, _resultArray);
+        self.next(AsyncErrorStatus, _resultArray);
     }
-}
-
-- (void)processBlockErrorCallback:(Async __weak *)async context:(id)context {
-    for (Async *child in _asyncArray) {
-        [child cancel];
-    }
-    self.next(AsyncErrorStatus, context);
 }
 
 - (void)cancel {
@@ -79,12 +79,12 @@
 @end
 
 
-@implementation Async(All)
-+ (Async *)all:(NSArray *)blockArray {
+@implementation Async(Any)
++ (Async *)any:(NSArray *)blockArray {
     if (blockArray == nil || [blockArray count] == 0) {
         return nil;
     }
-    AsyncAll * async = [[AsyncAll alloc] initWithArray:blockArray];
+    AsyncAny * async = [[AsyncAny alloc] initWithArray:blockArray];
     return async;
 }
 @end

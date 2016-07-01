@@ -30,8 +30,8 @@
     } named:@"Test2" option:[AsyncOption defaultOption]]];
     
     //sample all
-    [AsyncAll asyncAll:@[[Async asyncWithBlockName:@"Test1"],
-                         [Async asyncWithBlockName:@"Test2"]]]
+    [Async series:@[[Async asyncWithBlockName:@"Test1"],
+                    [Async asyncWithBlockName:@"Test2"]]]
     .match(AsyncSuccessStatus, ^(Async *__weak this, id context){
         NSLog(@"%@", context);
     }, [AsyncOption defaultOption])
